@@ -1,0 +1,1402 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+    	<meta http-equiv="Cache-Control" 
+    	      content="public, max-age=30" />
+        <meta charset="utf-8">
+        <meta name="viewport" 
+              content="width=device-width, initial-scale=1" />
+        <base href="." />
+        <link rel="icon" 
+              type="image/x-icon" 
+              href="https://skallerten-cdn.s3.amazonaws.com/favicon.ico" />
+        <title>Skallerten - Manual Eventos</title>
+        <link rel="preconnect" 
+              href="https://skallerten-cdn.s3.amazonaws.com" />
+        <link href="https://skallerten-cdn.s3.amazonaws.com/bootstrap/bootstrap-reduced.min.css?v=3" 
+   		      rel="stylesheet" />
+        <link href="https://skallerten-cdn.s3.amazonaws.com/custom.min.css?v=3" 
+              rel="stylesheet" />
+        <link href="https://skallerten-cdn.s3.amazonaws.com/themes/blue01.min.css" 
+              rel="stylesheet" /> 
+        <link href="https://skallerten-cdn.s3.amazonaws.com/fontawesome-5.11/css/all.min.css?v=3" 
+              rel="stylesheet" />
+       	<link href="https://skallerten-cdn.s3.amazonaws.com/webfonts/ubuntu/ubuntu.css?v=3" 
+       	      rel="stylesheet" />
+        <style>
+        	.title{font-size: 4em; font-weight: 700;}
+        	.title2{font-size: 1.1em; font-weight: 500; text-align: center;}
+        	.menuItemL2{padding-left: 1em;}
+        	#divMenuLeft{padding: 0em 0.3em; overflow-x: hidden; overflow-y: auto; width: 15em !important;}
+        	#divContent{padding: 0em 0.3em; width: calc(100% - 15.5em) !important; overflow-x: hidden; overflow-y: auto;}
+        </style>
+    </head>
+    <body style="margin: 0; padding: 0;"
+          onload="resized();"
+          onresize="resized();">
+    	<div style="width: 100%; height: 100vh;">
+    		<header>
+    			<div class="header" 
+    			     style="height: 2.5em; text-align: center;">
+    			     Skallerten - Manual Eventos
+    			</div>
+    		</header>
+    		<div class="container" 
+	             style="margin-top: .3rem !important;">
+	            <div class="row justify-content-center">
+		            <div id="divMenuLeft">
+				     	<nav aria-label="Navega&ccedil;&atilde;o principal">
+				     		<div class="card" 
+						         style="margin-bottom: 0.4em;">
+						        <div class="card-header header" 
+	     							  tabIndex="0">
+								    Funcionalidades
+								</div>
+						        <div class="card-body">
+						        	<div class="list-group">
+						        		<button id="bt4"
+						        		        onclick="clicked(this.id);" 
+										        tabIndex="0" 
+										        class="list-group-item list-group-item-action">
+												1 - Login/Recuperação de Senha
+										</button>
+										<button id="bt4-1"
+						        		        onclick="clicked(this.id);" 
+										        tabIndex="0" 
+										        class="list-group-item list-group-item-action">
+										        <div class="menuItemL2">
+										        	1.1 - Formulário de Login 
+										        </div>
+										</button>
+										<button id="bt4-2"
+						        		        onclick="clicked(this.id);" 
+										        tabIndex="0" 
+										        class="list-group-item list-group-item-action">
+										        <div class="menuItemL2">
+										        	1.2 - Formulário de Recuperação de Senha 
+										        </div>
+										</button>
+										
+										
+										<button id="bt5"
+						        		        onclick="clicked(this.id);" 
+										        tabIndex="0" 
+										        class="list-group-item list-group-item-action">
+												2 - Como Registrar-se para participar do evento
+										</button>
+										<button id="bt5-1"
+						        		        onclick="clicked(this.id);" 
+										        tabIndex="0" 
+										        class="list-group-item list-group-item-action">
+										        <div class="menuItemL2">
+													2.1 - Boleto, Pagamento e Informações
+												</div>
+										</button>
+										
+						        		<button id="bt1"
+						        		        onclick="clicked(this.id);" 
+										        tabIndex="0" 
+										        class="list-group-item list-group-item-action">
+										        3 - Como Registrar-se para ser Autor e/ou Avaliador de Artigos
+										</button>
+										<button id="bt1-1"
+						        		        onclick="clicked(this.id);" 
+										        tabIndex="0" 
+										        class="list-group-item list-group-item-action">
+										        <div class="menuItemL2">
+										        	3.1 - Registro Como Autor
+										        </div>
+										</button>
+										<button id="bt1-2"
+						        		        onclick="clicked(this.id);" 
+										        tabIndex="0" 
+										        class="list-group-item list-group-item-action">
+										        <div class="menuItemL2">
+										        	3.2 - Registro Como Autor e Avaliador
+										        </div>
+										</button>
+										<button id="bt1-3"
+						        		        onclick="clicked(this.id);" 
+										        tabIndex="0" 
+										        class="list-group-item list-group-item-action">
+										        <div class="menuItemL2">
+										        	3.3 - Registro Como Avaliador
+										        </div>
+										</button>
+										<button id="bt2"
+						        		        onclick="clicked(this.id);" 
+										        tabIndex="0" 
+										        class="list-group-item list-group-item-action">
+												4 - Como Efetuar Submissão de Trabalho(s)
+										</button>
+										<button id="bt3"
+						        		        onclick="clicked(this.id);" 
+										        tabIndex="0" 
+										        class="list-group-item list-group-item-action">
+												5 - Como Efetuar Avaliação de Trabalho(s)
+										</button>
+										<button id="bt3-1"
+						        		        onclick="clicked(this.id);" 
+										        tabIndex="0" 
+										        class="list-group-item list-group-item-action">
+												<div class="menuItemL2">
+										        	5.1 - Acessar e Analisar Informações
+										        </div>
+										</button>
+										<button id="bt3-2"
+						        		        onclick="clicked(this.id);" 
+										        tabIndex="0" 
+										        class="list-group-item list-group-item-action">
+												<div class="menuItemL2">
+										        	5.2 - Acessar Formulário Avaliação
+										        </div>
+										</button>
+										<button id="bt3-3"
+						        		        onclick="clicked(this.id);" 
+										        tabIndex="0" 
+										        class="list-group-item list-group-item-action">
+												<div class="menuItemL2">
+										        	5.3 - Após "Gravar Avaliação", clicar em "Confirmar Avaliação"
+										        </div>
+										</button>
+										<button id="bt3-4"
+						        		        onclick="clicked(this.id);" 
+										        tabIndex="0" 
+										        class="list-group-item list-group-item-action">
+												<div class="menuItemL2">
+										        	5.4 - Verificar Avaliação Confirmada - Importante
+										        </div>
+										</button>
+										
+										<button id="bt6"
+						        		        onclick="clicked(this.id);" 
+										        tabIndex="0" 
+										        class="list-group-item list-group-item-action">
+												6 - Moderação de Apresentação de Trabalhos - Sala Virtual
+										</button>
+						        	</div>
+						        </div>
+						    </div>
+						    <div class="card" 
+						         style="margin-bottom: 0.4em;">
+						        <div class="card-header header" 
+	     							  tabIndex="0">
+								    Sou ADMIN
+								</div>
+						        <div class="card-body">
+						        	<div class="list-group">
+						        		<button onclick="adminView();" 
+										        tabIndex="0" 
+										        class="list-group-item list-group-item-action">
+										        Manual do Admin
+										</button>
+						        	</div>
+						        </div>
+						    </div>
+				     	</nav>
+				    </div>
+		    		<div id="divContent">
+						<main>
+						    <div class="card">
+						        <div class="card-header" 
+						             id="viewTitle">
+						        </div>
+						        <div class="card-body">
+						        	<div id="content0" 
+						        	     style="display: none;">
+						        	     <h1>Informação Geral</h1>
+						        	     <div class="p">
+							        	     Este é um manual de uso geral. As imagens, campos de input, botões
+							        	     e instruções podem conter pequenas diferenças em relação ao que se apresenta
+							        	     no site do evento, devido à eventuais diferenças de configuração
+							        	     que são possíveis entre um evento e outro. De maneira geral essas diferenças
+							        	     não devem afetar o comportamento funcional do site.
+						        	     </div>
+						        	     <div class="p">
+						        	     	Por exemplo: caso o evento tenha apenas registro de "autores" e "avaliadores"
+						        	     	de trabalhos/artigos, estando o registro dos "participantes" delegado
+						        	     	à outro site (endereço web, URL, sistema), então o formulário
+						        	     	de login/recuperação de senha poderá vir com o campo de seleção
+						        	     	"Registrado Como", desabilitado e já preenchido com o valor
+						        	     	respectivo ao único tipo de registro aceito/efetuado para o evento em questão.
+						        	     </div>
+						        	     <div class="p">
+						        	     	Se você tiver dúvidas, ou ainda achar que determinada funcionalidade
+						        	     	esteja apresentando problemas, não hesite em entrar em contato com os 
+						        	     	organizadores do respectivo evento, para que estes lhe esclareçam dúvidas
+						        	     	e comuniquem à manutenção do site os eventuais problemas.
+						        	     </div>
+						        	</div>
+						        	<div id="content1" 
+						        	     style="display: none;">
+						        		<h1>3 - Como Registrar-se para ser Autor e/ou Avaliador de Artigos</h1>
+						        		<div class="p">
+						        			Existem 3 categorias de registro: Uma para quem deseja somente 
+						        			submeter artigos, outra para quem deseja somente colaborar sendo 
+						        			avaliador de artigos, e uma terceira para quem deseja realizar ambas as 
+						        			coisas. 
+						        		</div>
+						        		<div class="p">
+						        			O site efetua controle para evitar que um avaliador
+						        			receba um artigo de autoria própria (ou co-autoria) 
+						        			para avaliar. A organização
+						        			do evento decide decide a melhor forma para 
+						        			atribuir trabalhos/artigos a serem avaliados para
+						        			cada pessoa registrada como "avaliador/autor e avaliador",
+						        			com o sistema indicando as respectivas Áreas e SubAreas temáticas 
+						        			de preferência escolhidas. Contudo não é regra que um avaliador
+						        			receba apenas trabalhos/artigos de sua preferência para avaliação
+						        			(Caso este seja o caso, cabe ao avaliador comunicar-se expressamente
+						        			à organização do evento sobre tal desejo).
+						        		</div>
+						        		<div class="p">
+						        			Clique nos links abaixo para ver a demonstração dos processos de 
+						        			cada um dos tipos de registro.
+						        		</div>
+						        		<div class="p">
+						        			<ul>
+						        				<li>
+						        					<a href="javascript: void(0);" onclick="clicked('bt1-1');">
+						        						Registro Como Autor
+						        					</a>
+						        				</li>
+						        				<li>
+						        					<a href="javascript: void(0);" onclick="clicked('bt1-2');">
+						        						Registro Como Autor e Avaliador
+						        					</a>
+						        				</li>
+						        				<li>
+						        					<a href="javascript: void(0);" onclick="clicked('bt1-3');">
+						        						Registro Como Avaliador
+						        					</a>
+						        				</li>
+						        			</ul>
+						        		</div>
+						        	</div>
+						        	<div id="content1.1" 
+						        	     style="display: none;">
+						        		<h1>3.1 - Registro Como Autor</h1>
+						        		
+						        		<div class="alert-info" 
+						        		     style="border-radius: .25em; max-width: 80ch; margin: .7em auto; text-align: justify;">
+						        			Com este registro você estará autorizado a submeter trabalhos/artigos
+						        			para o evento.
+						        		</div>
+						       
+						        		<div class="p">
+						        			<ol>
+						        				<li>
+						        					Acessar o item de menu "Registro de Autores e Avaliadores".
+						        				</li>
+						        				<li>
+						        					Informar nome e email, e demais campos requeridos.
+						        				</li>
+						        				<li>
+						        					Para o campo "Registrar Como", escolher o valor "Autor de Trabalhos".
+						        				</li>
+						        				<li>
+						        					Informar uma senha, e a confirmação da senha.
+						        					Será validado tamanho mínimo 10 caracteres, devendo
+						        					ter ao menos 1 letra minúscula, 1 letra maiúscula,
+						        					1 número/digito [0-9], e um caracter especial do conjunto
+						        					[* + % @ _ . , $ :] (asterisco, sinal de mais, percentual,
+						        					arroba, underline, ponto, vírgula, cifrão e dois pontos).
+						        				</li>
+						        				<li>
+						        					Confirmar que não é um robô.
+						        				</li>
+						        				<li>
+						        					Clicar em "Registrar-me como Autor/Avaliador".
+						        				</li>
+						        				<li>
+						        					Acessar seu endereço de email para copiar o "Código de Confirmação" 
+						        					recebido, e que será solicitado ao efetuar login pela primeira vez.
+						        					O evento em questão poderá estar configurado para não solicitar
+						        					o código de confirmação ao efetuar o registro. Se este for o caso
+						        					o Email recebido terá uma mensagem um pouco diferente e não
+						        					conterá o "Código de Confirmação", desta forma o acesso já está
+						        					automaticamente confirmado após o registro.
+						        				</li>
+						        			</ol>
+						        		</div>
+						        		<div>
+						        			<img src="./img/registro/r01.png" 
+						        			     style="border: 0; width: 100%; height: 31em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/registro/r07.png" 
+						        			     style="border: 0; width: 100%; height: 28em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        	</div>
+						        	<div id="content1.2" 
+						        	     style="display: none;">
+						        		<h1>3.2 - Registro Como Autor e Avaliador</h1>
+						        		
+						        		<div class="alert-info" 
+						        		     style="border-radius: .25em; max-width: 80ch; margin: .7em auto; text-align: justify;">
+						        			Com este registro você estará autorizado a submeter trabalhos/artigos
+						        			para o evento.
+						        			
+						        			Também indica para a organização do evento que tem interesse em
+						        			ser um dos avaliadores de trabalhos/artigos submetidos ao evento.
+						        			(Ao final do evento é disponibilizada a funcionalidade 
+						        			que permite aos avaliadores emitirem seus certificados de avaliador
+						        			contando X número de horas por trabalho com avaliação finalizada!).
+						        		</div>
+						        		
+						        		<div class="p">
+						        			<ol>
+						        				<li>
+						        					Acessar o item de menu "Registro de Autores e Avaliadores".
+						        				</li>
+						        				<li>
+						        					Informar nome e email, e demais campos requeridos.
+						        				</li>
+						        				<li>
+						        					Para o campo "Registrar Como", escolher o valor 
+						        					"Autor e Avaliador de Trabalhos".
+						        				</li>
+						        				<li>
+						        					Informar uma senha, e a confirmação da senha.
+						        					Será validado tamanho mínimo 10 caracteres, devendo
+						        					ter ao menos 1 letra minúscula, 1 letra maiúscula,
+						        					1 número/digito [0-9], e um caracter especial do conjunto
+						        					[* + % @ _ . , $ :] (asterisco, sinal de mais, percentual,
+						        					arroba, underline, ponto, vírgula, cifrão e dois pontos).
+						        				</li>
+						        				<li>
+						        					(Opcional) Selecionar uma area temática e a respectiva subarea temática
+						        					que se tem preferência/expertise para avaliar trabalhos.
+						        					As areas e subareas são as disponíveis no evento para receber
+						        					as submissões de trabalhos. Informar estes campos ajuda 
+						        					aos organizadores distribuir melhor os trabalhos para os avaliadores.
+						        					Isso não implica que obrigatoriamente trabalhos recebidos para avaliar
+						        					sejam somente desta area e sub area temáticas.
+						        				</li>
+						        				<li>
+						        					Confirmar que não é um robô.
+						        				</li>
+						        				<li>
+						        					Clicar em "Registrar-me como Autor/Avaliador".
+						        				</li>
+						        				<li>
+						        					Acessar seu endereço de email para copiar o "Código de Confirmação" 
+						        					recebido, e que será solicitado ao efetuar login pela primeira vez.
+						        					O evento em questão poderá estar configurado para não solicitar
+						        					o código de confirmação ao efetuar o registro. Se este for o caso
+						        					o Email recebido terá uma mensagem um pouco diferente e não
+						        					conterá "Código de Confirmação", desta forma o acesso já está
+						        					automaticamente confirmado após o registro.
+						        				</li>
+						        			</ol>
+						        		</div>
+						        		<div>
+						        			<img src="./img/registro/r03.png" 
+						        			     style="border: 0; width: 100%; height: 31em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/registro/r07.png" 
+						        			     style="border: 0; width: 100%; height: 28em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        	</div>
+						        	<div id="content1.3" 
+						        	     style="display: none;">
+						        		<h1>3.3 - Registro Como Avaliador</h1>
+						        		
+						        		<div class="alert-info" 
+						        		     style="border-radius: .25em; max-width: 80ch; margin: .7em auto; text-align: justify;">
+						        			Com este registro você indica para a organização do evento que deseja
+						        			ser um dos avaliadores de trabalhos/artigos submetidos ao evento.
+						        			(Ao final do evento é disponibilizada a funcionalidade 
+						        			que permite aos avaliadores emitirem seus certificados de avaliador
+						        			contando X número de horas por trabalho com avaliação finalizada!).
+						        		</div>
+						        		
+						        		<div class="p">
+						        			<ol>
+						        				<li>
+						        					Acessar o item de menu "Registro de Autores e Avaliadores".
+						        				</li>
+						        				<li>
+						        					Informar nome e email, e demais campos requeridos.
+						        				</li>
+						        				<li>
+						        					Para o campo "Registrar Como", escolher o valor 
+						        					"Avaliador de Trabalhos".
+						        				</li>
+						        				<li>
+						        					Informar uma senha, e a confirmação da senha.
+						        					Será validado tamanho mínimo 10 caracteres, devendo
+						        					ter ao menos 1 letra minúscula, 1 letra maiúscula,
+						        					1 número/digito [0-9], e um caracter especial do conjunto
+						        					[* + % @ _ . , $ :] (asterisco, sinal de mais, percentual,
+						        					arroba, underline, ponto, vírgula, cifrão e dois pontos).
+						        				</li>
+						        				<li>
+						        					(Opcional) Selecionar uma area temática e a respectiva subarea temática
+						        					que se tem preferência/expertise para avaliar trabalhos.
+						        					As areas e subareas são as disponíveis no evento para receber
+						        					as submissões de trabalhos. Informar estes campos ajuda 
+						        					aos organizadores distribuir melhor os trabalhos para os avaliadores.
+						        					Isso não implica que obrigatoriamente trabalhos recebidos para avaliar
+						        					sejam somente desta area e sub area temáticas.
+						        				</li>
+						        				<li>
+						        					Confirmar que não é um robô.
+						        				</li>
+						        				<li>
+						        					Clicar em "Registrar-me como Autor/Avaliador".
+						        				</li>
+						        				<li>
+						        					Acessar seu endereço de email para copiar o "Código de Confirmação" 
+						        					recebido, e que será solicitado ao efetuar login pela primeira vez.
+						        					O evento em questão poderá estar configurado para não solicitar
+						        					o código de confirmação ao efetuar o registro. Se este for o caso
+						        					o Email recebido terá uma mensagem um pouco diferente e não
+						        					conterá "Código de Confirmação", desta forma o acesso já está
+						        					automaticamente confirmado após o registro.
+						        				</li>
+						        			</ol>
+						        		</div>
+						        		<div>
+						        			<img src="./img/registro/r02.png" 
+						        			     style="border: 0; width: 100%; height: 31em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/registro/r07.png" 
+						        			     style="border: 0; width: 100%; height: 28em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        	</div>
+						        	<div id="content2"
+						        	     style="display: none;">
+						        		<h1>4 - Como Efetuar Submissão de Trabalho(s)</h1>
+						        		<div class="p">
+						        			Pré Requisitos: 
+						        			<ol>
+						        				<li>
+						        					Ter realizado cadastro como
+						        					"<strong>autor</strong>" ou 
+						        					"<strong>autor e avaliador</strong>" de trabalhos.
+						        				</li>
+						        				<li>
+						        					Estar logado no site.
+						        				</li>
+						        				<li>
+						        					Acessar o item de menu "Submeter/Consultar Artigo(s)"
+						        				</li>
+						        			</ol>
+						        		</div>
+						        		<div class="p">
+						        			Etapas: O processo de submissão dos trabalhos/artigos
+						        			está modelado de modo a seguir uma sequência
+						        			lógica de etapas, onde é possível avançar e retroceder
+						        			cada um dos passos.
+						        		</div>
+						        		<div class="p"></div>
+						        		
+						        		
+						        		<h2>1º - Iniciar Submissão</h2>
+						        		<div class="p">
+						        			Ao estar logado, está disponível o item de menu
+						        			"<strong>Submeter/Consultar Artigos</strong>",
+						        			que ao ser clicado, leva à listagem de trabalhos submetidos.
+						        			Acima desta listagem há o botão 
+						        			"<strong>Nova Submissão</strong>". Deve-se clicar neste botão
+						        			para iniciar a submissão
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/submissao_trabalhos/s01.png" 
+						        			     style="border: 0; width: 100%; height: 34em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		
+						        		<h2>2º - Selecionar Congresso e Areas Temáticas</h2>
+						        		<div class="p">
+						        			Selecionar o congresso/conferência ao qual se
+						        			deseja realizar a submissão, também a area temática
+						        			e subarea temática. Cada congresso/conferência pode ter areas 
+						        			e subareas diferente de outro congresso/conferência do mesmo
+						        			evento, conforme o que foi definido pela organização.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/submissao_trabalhos/s02.png" 
+						        			     style="border: 0; width: 100%; height: 28em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		
+						        		<h2>3º - Dados de Identificação</h2>
+						        		<div class="p">
+						        			São solicitados alguns dados de identificação
+						        			e/ou controle.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/submissao_trabalhos/s03.png" 
+						        			     style="border: 0; width: 100%; height: 29em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		
+						        		<h2>4º - Informar Resumo</h2>
+						        		<div class="p">
+						        			Informar o resumo do trabalho. Algumas
+						        			informações para ajuda a respeito do tamanho
+						        			mínimo e/ou máximo estão acima e abaixo da caixa
+						        			de texto. (Conforme e se existirem tamanhos mínimo/máximo definidos).
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/submissao_trabalhos/s04.png" 
+						        			     style="border: 0; width: 100%; height: 30em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		
+						        		<h2>5º - Aceitar os Termos de Submissão</h2>
+						        		<div class="p">
+						        			Marcar a Caixa de Seleção informando
+						        			que aceita e concorda com os termos de submissão.
+						        			Aqui nesta etapa, ao clicar em "<strong>Salvar e Continuar</strong>"
+						        			os dados informados serão salvos. Neste caso pode-se utilizar o botão
+						        			"<strong>Cancelar e Voltar</strong>" caso se pretenda informar os
+						        			dados de autores, anexar arquivos e confirmar a submissão em outro momento.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/submissao_trabalhos/s05.png" 
+						        			     style="border: 0; width: 100%; height: 32em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		
+						        		<h2>6º - Informar Autores</h2>
+						        		<div class="p">
+						        			O sistema adiciona automaticamente o usuário logado como
+						        			o autor 1 do artigo (Autor e Responsável da Submissão).
+						        			Se o trabalho tiver outro(s) autor(es) (Co-Autores),
+						        			você deve adicioná-los, clicando no botão 
+						        			"<strong>Adicionar Autor</strong>".
+						        		</div>
+						        		<div class="p">
+						        			Será necessário
+						        			informar o e-mail deste "co-autor", e é pré-requisito
+						        			que o dono deste respectivo email também tenha se registrado
+						        			no evento como "<strong>Autor de Artigos</strong>" 
+						        			ou "<strong>Autor e Avaliador de Artigos</strong>".
+						        			O sistema realiza esta verificação ao tentar adicionar o(a) co-autor(a).
+						        			Esta etapa pode ser pulada e realizada em um momento futuro 
+						        			(Haverá opções de ações para cada respectivo trabalho da lista).
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/submissao_trabalhos/s06.png" 
+						        			     style="border: 0; width: 100%; height: 32em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/submissao_trabalhos/s06b.png" 
+						        			     style="border: 0; width: 100%; height: 33em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		
+						        		<h2>7º - Anexar (Upload) dos Arquivos</h2>
+						        		<div class="p">
+						        			Anexar (fazer Upload) dos Arquivos requeridos.
+						        			É apresentada a lista de items requeridos e/ou opcionais.
+						        			Para cada item são exibidas as especificações respectivas.
+						        			O sistema valida se todos os arquivos requeridos estão
+						        			anexados ao clicar em 
+						        			"<strong>Finalizar &amp; Confirmar Submissão</strong>".
+						        			Será apresentada uma solicitação de confirmação desta ação, caso
+						        			os arquivos requeridos estejam validados. (O sistema não valida
+						        			o conteúdo dos arquivos, este é de inteira responsabilidade dos
+						        			autores!).
+						        		</div>
+						        		<div class="p">
+						        			Esta etapa pode ser pulada e realizada em um momento futuro,
+						        			para isso utilize o botão "<strong>Cancelar e Voltar</strong>". 
+						        			(Haverá opções de ações para cada respectivo trabalho da lista).
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/submissao_trabalhos/s07.png" 
+						        			     style="border: 0; width: 100%; height: 33em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/submissao_trabalhos/s07b.png" 
+						        			     style="border: 0; width: 100%; height: 32em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/submissao_trabalhos/s08.png" 
+						        			     style="border: 0; width: 100%; height: 31em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/submissao_trabalhos/s09.png" 
+						        			     style="border: 0; width: 100%; height: 33em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		
+						        		<h2>8º - Lista de Trabalhos Submetidos</h2>
+						        		<div class="p">
+						        			Após adicionar uma submissão de trabalho, esta fica visível
+						        			na lista. Quando a submissão 
+						        			<strong>ainda não</strong> foi confirmada, é possível editar e/ou
+						        			excluir a submissão, <strong>confirmar a submissão</strong>,
+						        			além de editar os autores e arquivos (Trocar - Remover/Adicionar).
+						        		</div>
+						        		<div class="p">
+						        			Se a submissão está confirmada não é mais possível excluir/editar
+						        			ou alterar arquivos. Apenas co-autor(es) podem ser adicionados e/ou
+						        			removidos. Os demais dados estarão apenas para consulta, podendo ser
+						        			acessados pelos botões "<strong>Ver / Editar Autores</strong>" 
+						        			e "<strong>Ver / Editar Arquivos</strong>".
+						        		</div>
+						        		<div class="p">
+						        			<div class="alert-info"
+						        			     style="padding: .5em; border-radius: .3em;">
+						        				SOMENTE SUBMISSÕES QUE FORAM CONFIRMADAS (AÇÃO "CONFIRMAR SUBMISSÃO")
+						        				PODERÃO SER AVALIADAS PELOS AVALIADORES. CASO PULAR ETAPAS OU
+						        				NECESSITAR DESFAZER A CONFIRMAÇÃO PARA EFETUAR ALTERAÇÕES, NÃO ESQUEÇA
+						        				DE "CONFIRMAR SUBMISSÃO".
+						        			</div>
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/submissao_trabalhos/s10.png" 
+						        			     style="border: 0; width: 100%; height: 32em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/submissao_trabalhos/s11.png" 
+						        			     style="border: 0; width: 100%; height: 32em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        	</div>
+						        	<div id="content3"
+						        	     style="display: none;">
+						        		<h1>5 - Como Efetuar Avaliação de Trabalho(s)</h1>
+						        		<div class="p">
+						        			Pré Requisitos: 
+						        			<ol>
+						        				<li>
+						        					Ter realizado cadastro como
+						        					"avaliador" ou "autor e avaliador" de trabalhos.
+						        				</li>
+						        				<li>
+						        					Estar logado no site.
+						        				</li>
+						        				<li>
+						        					Acessar o item de menu "Avaliar Trabalho(s)"
+						        				</li>
+						        			</ol>
+						        		</div>
+						        		<div class="p">
+						        			Cada linha da tabela exibida corresponde à um trabalho/artigo
+											a ser avaliado, ou já avaliado (depois de confirmar 
+											a avaliação os dados ainda ficam disponíveis no modo
+											apenas consulta - sem possibilidade de edição).
+						        		</div>
+						        		<div class="p">
+						        			Os itens do menu de 5.1 a 5.4 expõem de forma
+						        			mais detalhada o processo de avaliação.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/avaliar_trabalhos/avaliar_trabalhos1.png" 
+						        			     style="border: 0; width: 100%; height: 28em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<div class="p"></div>
+						        		<div class="p"></div>
+						        		
+						        	</div>	
+						        	<div id="content3.1"
+						        	     style="display: none;">
+						        		<h1>5.1 - Acessar e Analisar Informações</h1>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/avaliar_trabalhos/avaliar_trabalhos1.png" 
+						        			     style="border: 0; width: 100%; height: 28em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/avaliar_trabalhos/avaliar_trabalhos2.png" 
+						        			     style="border: 0; width: 100%; height: 28em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<div class="p">
+						        			O arquivo respectivo ao trabalho estará disponível ao
+						        			clicar no botão "Download". O arquivo disponibilizado
+						        			é o arquivo sem identificação dos autores.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/avaliar_trabalhos/avaliar_trabalhos3.png" 
+						        			     style="border: 0; width: 100%; height: 28em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<div class="p"></div>
+						        		<div class="p"></div>
+						        		
+						        	</div>	
+						        	<div id="content3.2"
+						        	     style="display: none;">	
+						        		<h1>5.2 - Acessar Formulário Avaliação</h1>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/avaliar_trabalhos/avaliar_trabalhos1a.png" 
+						        			     style="border: 0; width: 100%; height: 28em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<div class="p">
+						        			O Campo "Comentários / Sugestões / Observações" é um campo
+						        			para o avaliador colocar suas notas e impressões de forma livre
+						        			a respeito do trabalho, de forma a ajudar os autores efetuarem
+						        			correções/ajustes e melhorias no trabalho (suponhamos que o trabalho
+						        			não seja aprovado no evento em questão, e os autores usem/possam usar
+						        			o mesmo trabalho para submissão em outro evento).
+						        		</div>
+						        		<div class="p">
+						        			O Campo "Relevância" ao lado do campo "Nota", em cada ponto
+						        			de avaliação tem o objetivo de ajudar os autores a calibrar os
+						        			ajustes/melhorias do trabalho, servindo de complemento
+						        			aos dados do campo "Comentários / Sugestões / Observações".
+						        		</div>
+						        		<div class="p">
+						        			O valor da média da avaliação é calculado a medida
+						        			que se alteram os valores atribuídos a cada um dos pontos
+						        			de avaliação.
+						        		</div>
+						        		<div class="p">
+						        			Conforme o valor calculado da média se altera, também o sistema
+						        			calcula o conceito, de forma a ficar ajustado com a parametrização
+						        			atribuída ao intervalo de valores de média.
+						        		</div>
+						        		<div class="p">
+						        			Para gravar os valores atribuídos deve-se clicar no botão "Gravar Avaliação".
+						        			Com esta ação volta-se à lista de avaliações. A avaliação
+						        			ainda não está finalizada, será necessário uma ação especial de confirmação
+						        			ao clicar no botão "Confirmar Avaliação" no respectivo item correspondente
+						        			à avaliação em questão (ícone "duplo check").
+						        		</div>
+						        		<div class="p">
+						        			<table class="table" 
+		       									   mdbTable> 
+		       									<thead class="black white-text">
+		       										<tr>
+							        					<th scope="row" 
+	          		                                        colspan="2">
+							        						Parametrização do Conceito
+							        					</th>
+							        				</tr>
+							        				<tr>
+							        					<th scope="col" 
+	          		                                        style="width: 14em;">
+							        						Intervalo de Média
+							        					</th>
+							        					<th scope="col" 
+	          		                                        style="width: auto;">
+							        						Conceito Atribuído
+							        					</th>
+							        				</tr>
+							        			</thead>
+							        			<tbody>
+							        				<tr mdbTableCol>
+							        					<td class="number">
+							        						&lt; 5.49
+							        					</td>
+							        					<td class="text noBorderRight">
+							        						REPROVADO
+							        					</td>
+							        				</tr>
+							        				<tr mdbTableCol>
+							        					<td class="number">
+							        						&lt;= 7.00
+							        					</td>
+							        					<td class="text noBorderRight">
+							        						APROVAR SE A COMPETIÇÃO FOR BAIXA
+							        					</td>
+							        				</tr>
+							        				<tr mdbTableCol>
+							        					<td class="number">
+							        						&lt; 8.50
+							        					</td>
+							        					<td class="text noBorderRight">
+							        						APROVAR
+							        					</td>
+							        				</tr>
+							        				<tr mdbTableCol>
+							        					<td class="number">
+							        						&gt;= 8.50
+							        					</td>
+							        					<td class="text noBorderRight">
+							        						APROVAR PRIORITARIAMENTE
+							        					</td>
+							        				</tr>
+							        				<tr>
+											        	<td colspan="2" 
+											        	    class="navigationBottom">
+									        	    	</td>
+									        	    </tr>
+							        			</tbody>
+						        			</table>
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/avaliar_trabalhos/avaliar_trabalhos4.png" 
+						        			     style="border: 0; width: 100%; height: 28em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<div class="p"></div>
+						        		<div class="p"></div>
+						        		
+						        	</div>	
+						        	<div id="content3.3"
+						        	     style="display: none;">	
+						        		<h1>5.3 - Após "Gravar Avaliação", clicar em "Confirmar Avaliação"</h1>
+						        		<div class="p">
+						        			A ação "Gravar Avaliação" salva os dados dos valores da avaliação.
+						        			Após efetuar esta ação pela primeira vez, pode-se voltar
+						        			e editar os valores quantas vezes for necessário (Isso possibilita
+						        			realizar a avaliação em partes e/ou dias diferentes por exemplo). 
+						        		</div>
+						        		<div class="p">
+						        			Quando se estiver certo dos valores informados ( e ter efetuado
+						        			pelo menos uma vez a ação "Gravar Avaliação"),
+						        			deve-se realizar a ação "Confirmar Avaliação" para finalizar
+						        			definitivamente a avaliação.
+						        		</div>
+						        		<div class="p">
+						        			Após efetuar a confirmação da avaliação os dados não estarão
+						        			mais habilitados para a edição.
+						        		</div>
+						        		<div class="p">
+						        			<div class="alert-info"
+						        			     style="padding: .5em; border-radius: .3em;">
+						        			    O SISTEMA E OS ORGANIZADORES DO EVENTO IRÃO DESCONSIDERAR
+						        			    POR COMPLETO TODA E QUALQUER AVALIAÇÃO QUE NÃO SE FIZER A 
+						        			    AÇÃO "<strong>CONFIRMAR AVALIAÇÃO</strong>".
+						        			    O SISTEMA TAMBÉM NÃO CONTARÁ OS PONTOS DESTAS AVALIAÇÕES 
+						        			    "NÃO CONFIRMADAS" NO MOMENTO DE GERAR O CERTIFICADO DE
+						        			    AVALIADOR DE ARTIGOS.
+						        			</div>
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/avaliar_trabalhos/avaliar_trabalhos1b.png" 
+						        			     style="border: 0; width: 100%; height: 28em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/avaliar_trabalhos/avaliar_trabalhos5.png" 
+						        			     style="border: 0; width: 100%; height: 28em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<div class="p"></div>
+						        		<div class="p"></div>
+						        	</div>	
+						        	<div id="content3.4"
+						        	     style="display: none;">
+						        		<h1>5.4 - Verificar Avaliação Confirmada - Importante</h1>
+						        		<div class="p">
+						        			É necessário que a avaliação esteja confirmada para 
+						        			as notas atribuídas serem
+						        			consideradas pelo sistema de avaliação e organizadores
+						        			do evento. 
+						        		</div>
+						        		<div class="p">
+						        			Também é importante ressaltar que apenas as avaliações 
+						        			confirmadas poderão contabilizar pontos para
+						        			geração de certificado de avaliador de trabalhos/artigos. 
+						        			Por exemplo se o avaliador deixou de efetuar a confirmação da avaliação
+						        			de um dos trabalhos a ele atribuído,
+						        			dentro do tempo hábil, então no momento
+						        			de gerar o certificado não serão contabilizadas as horas
+						        			respectivas àquela avaliação de trabalho.
+						        		</div>
+						        		<div>
+						        			<img src="./img/avaliar_trabalhos/avaliar_trabalhos6.png" 
+						        			     style="border: 0; width: 100%; height: 28em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<div class="p"></div>
+						        		<div class="p"></div>
+						        		
+						        	</div>
+						        	<div id="content4"
+						        	     style="display: none;">
+						        		<h1>1 - Login/Recuperação de Senha</h1>
+						        		<div class="p">
+						        			Pré Requisitos: 
+						        			<ol>
+						        				<li>
+						        					Estas funcionalidades dependem de você já ter
+								        			efetuado o registro no site, conforme
+								        			o item de menu número <strong>2</strong> (Participar do evento) 
+								        			e/ou um dos sub-itens do item de menu número <strong>3</strong> 
+								        			(Submeter trabalhos para avaliação/Ser avaliador de trabalhos).
+						        				</li>
+						        			</ol>
+						        		</div>
+						        		<div class="p">
+						        			A funcionalidade "Recuperação de Senha", está disponível
+						        			no mesmo formulário de login, para acessá-la realize click
+						        			no link "@ Esqueci a Senha".
+						        		</div>
+						        		<div class="p">
+						        			Os formulários e mensagens de email usados como demonstração
+						        			nos sub-itens deste menu podem variar um pouco de acordo 
+						        			com as configurações do evento em questão.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div class="p"></div>
+						        		<div class="p"></div>
+						        		
+						        	</div>
+						        	<div id="content4.1"
+						        	     style="display: none;">	
+						        		<h1>1.1 - Formulário de Login</h1>
+						        		
+						        		<div class="p">
+						        		    Ao clicar em "Login" no canto superior direito
+						        			deve-se escolher entre
+						        			"<strong>Efetuar Login Como Autor e/ou Avaliador de Submissões</strong>"
+						        			ou
+						        			"<strong>Efetuar Login Como Participante</strong>".
+						        			Para cada uma destas opções é necessário ter se registrado
+						        			na respectiva categoria de registro no evento.
+						        		</div>
+						        		<div class="p">
+						        			Ao realizar login na categoria 
+						        			"<strong>Autor e/ou Avaliador de Submissões</strong>" serão
+						        			disponibilizadas apenas as funcionalidades relativas às
+						        			tarefas de submissão de trabalhos e de avaliação de trabalhos
+						        			(conforme permissões de acesso).
+						        		</div>
+						        		<div class="p">
+						        			Para o acesso (login) utilizando a opção 
+						        			"<strong>Efetuar Login Como Participante</strong>",
+						        			serão disponibilizados os itens de menu relacionados ao
+						        			evento propriamente e que não estão abertamente publicados
+						        			para todo e qualquer visitante do site 
+						        			(Contéudos, Informações, Vídeos, Palestras, 
+						        			Emissão e Consulta de Boletos, entre outros).
+						        		</div>
+						        		<div class="p">
+						        			Se alguém pretende ser "Autor e/ou Avaliador" e também 
+						        			"Participante", deverá realizar dois registros no evento
+						        			um para cada respectiva categoria.
+						        		</div>
+						        		<div class="p">
+						        			Para cada categoria de registro a senha informada fica 
+						        			restrita ao uso naquela categoria, ou melhor dizendo,
+						        			a senha cadastrada para o registro como "Autor e/ou Avaliador" 
+						        			não será válida ao tentar realizar o login/acesso como 
+						        			"Participante" (e vice-versa).
+						        		</div>
+						        		<div class="p">
+						        			Por questão de segurança é recomendável utilizar senhas diferentes
+						        			em cada categoria de registro (Caso haja necessidade de fazer registro
+						        			em mais de uma categoria), mas nada impede que se utilize a mesma
+						        			senha em ambas as categorias de registro.
+						        			De toda forma a senha deve ser quanto mais longa o possível
+						        			dentro da medida que se consiga memorizar.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/login/l01.png" 
+						        			     style="border: 0; width: 100%; height: 28em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		
+						        		<div class="p">
+						        			Dependendo da configuração do evento
+						        			poderá ser solicitado (ou não) um código de confirmação
+						        			ao efetuar o login pela primeira vez (Após o registro/inscrição).
+						        			De toda forma será enviado um email no estilo abaixo
+						        			informando tal código de confirmação e a necessidade de informá-lo
+						        			quando solicitado, ou um email apenas informando que o 
+						        			o registro/inscrição foi efetuado com sucesso.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/login/l03.png" 
+						        			     style="border: 0; width: 100%; height: 24em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<div class="p"></div>
+						        		<div class="p"></div>
+						      
+						      		</div>
+						        	<div id="content4.2"
+						        	     style="display: none;">  		
+						        		<h1>1.2 - Formulário de Recuperação de Senha</h1>
+						        		<div class="p">
+						        			Caso o evento permita registro de "Autor e/ou Avaliador" de trabalhos,
+						        			e registro de "Participante" (ou inscrição), será obrigatório
+						        			informar a qual destas categorias de registro que se
+						        			deseja realizar o login, no campo "Registrado Como".
+						        			Do contrário já estará pré-selecionado o único valor possível para
+						        			este campo.
+						        		</div>
+						        		<div class="p">
+						        			Para cada categoria de registro a senha informada fica 
+						        			restrita ao uso naquela categoria, ou melhor dizendo,
+						        			a senha cadastrada para o registro como "Autor e/ou Avaliador" 
+						        			não será alterada ao realizar a recuperação de senha como 
+						        			"Participante" (e vice-versa).
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/login/l02.png" 
+						        			     style="border: 0; width: 100%; height: 28em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		
+						        		<div class="p">
+						        			Será enviado um email no estilo abaixo
+						        			informando a nova senha gerada pelo sistema e um código de 
+						        			confirmação.
+						        			Este código de confirmação será solicitado ao realizar 
+						        			o primeiro login com a nova senha.
+						        		</div>
+						        		<div class="p">
+						        			Esta senha gerada é para o registro no evento na 
+						        			respectiva categoria de registro em que se está tentando
+						        			efetuar login (Ver categoria destacada no topo do formulário
+						        			de login).  
+						        		</div>
+						        		<div class="p">
+						        			Caso você estravie o email com esta nova senha, ou por algum
+						        			motivo o email não seja recebido, você deverá efetuar
+						        			novamente o processo de recuperar a senha, pois não há como
+						        			saber o conteúdo da senha armazenada, já que é criptografada
+						        			de forma irreversível no banco de dados.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/login/l04.png" 
+						        			     style="border: 0; width: 100%; height: 26em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<div class="p"></div>
+						        		<div class="p"></div>
+						        		
+						        	</div>
+						        	<!--  -->
+						        	<div id="content5"
+						        	     style="display: none;">
+						        	    <h1>2 - Como Registrar-se para Participar do Evento</h1>
+						        		
+						        		<div class="alert-info" 
+						        		     style="border-radius: .25em; max-width: 80ch; margin: .7em auto; text-align: justify;">
+						        			Com este registro você estará autorizado a ter acesso a funcionalidades
+						        			e outros recursos do evento disponibilizados apenas aos participantes
+						        			e/ou que necessitam autenticação para acesso. 
+						        		</div>
+						       
+						        		<div class="p">
+						        			<ol>
+						        				<li>
+						        					Acessar o item de menu "Registro de Participante/Inscrito".
+						        				</li>
+						        				<li>
+						        					Informar nome e email, e demais campos requeridos.
+						        				</li>
+						        				<li>
+						        					Informar uma senha, e a confirmação da senha.
+						        					Será validado tamanho mínimo 10 caracteres, devendo
+						        					ter ao menos 1 letra minúscula, 1 letra maiúscula,
+						        					1 número/digito [0-9], e um caracter especial do conjunto
+						        					[* + % @ _ . , $ :] (asterisco, sinal de mais, percentual,
+						        					arroba, underline, ponto, vírgula, cifrão e dois pontos).
+						        				</li>
+						        				<li>
+						        					Para o campo "Categoria Inscrição", 
+						        					selecionar a respectiva categoria a qual se deseja
+						        					realizar a inscrição.
+						        				</li>
+						        				<li>
+						        					Confirmar que não é um robô.
+						        				</li>
+						        				<li>
+						        					Clicar em "Registrar-me como Participante/Inscrito".
+						        				</li>
+						        				<li>
+						        					Acessar seu endereço de email para copiar o "Código de Confirmação" 
+						        					recebido, e que será solicitado ao efetuar login pela primeira vez.
+						        					O evento em questão poderá estar configurado para não solicitar
+						        					o código de confirmação ao efetuar o registro. Se este for o caso
+						        					o Email recebido terá uma mensagem um pouco diferente e não
+						        					conterá o "Código de Confirmação", desta forma o acesso já está
+						        					automaticamente confirmado após o registro.
+						        				</li>
+						        				<li>
+						        					Caso o evento não necessitar o "Código de Confirmação",
+						        					logo após o registro com sucesso, será feito um direcionamento
+						        					para o item de menu "Emissão de Ticket/Boleto Pagamento Inscrição" 
+						        					respectivo a geração do boleto
+						        					bancário para pagamento da inscrição (Por motivo de conveniência).
+						        					Ver o item "2.1 - Boleto, Pagamento e Informações" 
+						        					para maiores informações.<br/>
+						        					<strong>Não é obrigatório</strong> preencher os campos solicitados
+						        					para gerar o boleto, caso você esteja isento de pagamento
+						        					da taxa de inscrição.<br/>
+						        				</li>
+						        			</ol>
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/registro/r08.png" 
+						        			     style="border: 0; width: 100%; height: 31em;" />
+						        		</div>
+						        	</div>
+						        	
+						        	<div id="content5.1"
+						        	     style="display: none;">
+						        	    <h1>2.1 - Boleto, Pagamento e Informações</h1>
+						        		
+						        		<div class="p">
+				        					A falta de pagamento da inscrição não bloqueia o acesso
+				        					ao sistema e outros recursos que precisam autenticação. 
+						        		</div>
+						        		<div class="p">
+						        			A geração do boleto pode ser feita a qualquer 
+				        					momento (até a data limite de pagamento definida 
+				        					para o evento pela organização), bastando
+				        					que se faça login no site do evento "Como Participante/Inscrito",
+				        					e acessar o item de menu "Emissão de Ticket/Boleto Pagamento Inscrição".
+						        		</div>
+						        		<div>
+						        			<img src="./img/registro/r10.png" 
+						        			     style="border: 0; width: 100%; height: 31em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		
+						        		<h2>Novo boleto</h2>
+						        		<div class="p">
+						        			Poderá ser emitido novo boleto caso o(s) boleto(s)
+						        			já emitido(s) estejam vencidos.
+						        		</div>
+						        		<div>
+						        			<img src="./img/registro/r09.png" 
+						        			     style="border: 0; width: 100%; height: 31em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		
+						        		<h2>Pagamento via Pix</h2>
+						        		<div class="p">
+						        			O boleto gerado pode ser pago pelos meios já
+				        					conhecidos ou através do Pix com o QrCode
+				        					adicionado a direita do código de barras.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/registro/r11.png" 
+						        			     style="border: 0; width: 100%; height: 31em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		
+						        		<h2>Impressão/Pagamento a qualquer tempo</h2>
+						        		<div class="p">
+						        			O boleto gerado fica acessível na listagem de boletos
+						        			sendo possível a exibição para pagamento e/ou impressão
+						        			enquanto não estiver vencido. Para isso deve se
+						        			utilizar o botão "Pagar Boleto". 
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/registro/r12.png" 
+						        			     style="border: 0; width: 100%; height: 31em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        	</div>
+						        	<div id="content6" 
+						        	     style="display: none;">
+						        	     <h1>Moderação de Sala Virtual</h1>
+						        	     
+						        	     <h2>Apresentação de Trabalhos</h2>
+						        	     
+						        	     <div class="p"></div>
+						        	     
+						        	     <h3>Vídeo Parte 1</h3>
+						        	     <div class="p">
+						        	        - Fazer Login como autor/avaliador, e utilizar extensão
+						        	        "Dualless" do chrome (ou equilante em outros navegadores) 
+						        	        para dividir a tela (Recomendação - pode-se utilizar outros 
+						        	        meios como ter 2 monitores como exemplo), 
+						        	        podendo observar e gerenciar os acessos do aplicativo 
+						        	     	externo (google meet e etc), ao mesmo tempo
+						        	        que se valida as solicitações de entrada com 
+						        	        as requisições da lista de espera.</br/></br/>
+						        	        
+						        	        Extensão "Dualless": 
+						        	        <a href="https://chrome.google.com/webstore/detail/dualless/bgdpkilkheacbboffppjgceiplijhfpd?hl=pt"
+						        	           target="_blank"
+						        	           style="text-decoration: underline; color: #01f;">
+						        	           https://chrome.google.com/webstore/detail/dualless/bgdpkilkheacbboffppjgceiplijhfpd?hl=pt
+						        	        </a>
+						        	        
+						        	        </br/></br/>
+						        	        <a href="./webm/2.webm" 
+						        	           target="_blank"
+						        	           style="text-decoration: underline; color: #01f;">
+						        	           Gravação de tela parte 1
+						        	        </a>
+						        	     </div>
+						        	     
+						        	     <h3>Vídeo Parte 2</h3>
+						        	     <div class="p">
+						        	        - Continuação da parte 1. Gerenciando a lista de espera
+						        	        no sistema. Aceitar ou recusar na lista de espera de acordo
+						        	        com a respectiva ação que foi/irá ser tomada em relação
+						        	        à entrada da pessoa/participante na sala do aplicativo 
+						        	     	externo (google meet e etc)
+						        	        </br/></br/>
+						        	        
+						        	        <a href="./webm/3.webm" 
+						        	           target="_blank"
+						        	           style="text-decoration: underline; color: #01f;">
+						        	           Gravação de tela parte 2
+						        	        </a>
+						        	     </div>
+						        	     
+						        	     <h3>Vídeo Parte 3</h3>
+						        	     <div class="p">
+						        	        - Participante do evento e/ou pessoa aleatória na
+						        	        internet solicita participar da sala de apresentação do trabalho
+						        	        gerando um novo registro na lista de espera.
+						        	        </br/></br/>
+						        	        
+						        	        <a href="./webm/4.webm" 
+						        	           target="_blank"
+						        	           style="text-decoration: underline; color: #01f;">
+						        	           Gravação de tela parte 3
+						        	        </a>
+						        	     </div>
+						        	     
+						        	     <h3>Vídeo Parte 4</h3>
+						        	     <div class="p">
+						        	        - Continuação da parte 3. 
+						        	        A solicitação da pessoa em participar
+						        	        da sala de apresentação gerou um novo registro na lista de espera.
+						        	        A pessoa foi direcionada à sala virtual e fica aguardando ser aceita.
+						        	        A lista de espera se atualiza automaticamente a cada 60 segundos,
+						        	        e traz este novo registro gerado na atualização seguinte.
+						        	        </br/></br/>
+						        	        
+						        	        <a href="./webm/5.webm" 
+						        	           target="_blank"
+						        	           style="text-decoration: underline; color: #01f;">
+						        	           Gravação de tela parte 4
+						        	        </a>
+						        	     </div>
+						        	     
+						        	     <h2>Validação do participante</h2>
+						        	     <div class="p">
+						        	     	- Deve ser feita manualmente. Observar se o email informado
+						        	     	ao entrar na lista de espera (sistema) é o mesmo email
+						        	     	que está solicitando a entrada na sala virtual do aplicativo 
+						        	     	externo (google meet e etc).
+						        	     	</br/></br/>
+						        	     	- O sistema informada também se a pessoa que solicitou participação
+						        	     	na sala de apresentação está ou não registrada no evento
+						        	     	como participante. Eventualmente pode-se dar preferência aos
+						        	     	participantes do evento (conforme for a orientação da organização).
+						        	     </div>
+						        	</div>
+						        	<!-- next content -->
+						        </div>
+						    </div>
+						</main>
+					</div>
+				</div>
+			</div>
+    	</div>
+    	<script>
+	    	function contentTop(){
+				document.getElementById('divContent').scrollTo(0,0);
+			}
+	    	function resized(){
+				document.getElementById('divMenuLeft').style.maxHeight = (window.innerHeight - 60) + 'px';
+				document.getElementById('divContent').style.maxHeight = (window.innerHeight - 60) + 'px';
+			}
+    		var opts = [
+    			{id: 'bt0', contentId: 'content0', title: 'Início'},
+    			{id: 'bt1', contentId: 'content1', 
+    				        title: 'Como Registrar-se para ser Autor e/ou Avaliador de Artigos'},
+    			{id: 'bt1-1', contentId: 'content1.1', title: 'Registro Como Autor'},
+    			{id: 'bt1-2', contentId: 'content1.2', title: 'Registro Como Autor e Avaliador'},
+    			{id: 'bt1-3', contentId: 'content1.3', title: 'Registro Como Avaliador'},
+    			{id: 'bt2', contentId: 'content2', title: 'Efetuar Submissão de Trabalho(s)'},
+    			{id: 'bt3', contentId: 'content3', title: 'Efetuar Avaliação de Trabalho(s)'},
+    			{id: 'bt3-1', contentId: 'content3.1', title: 'Acessar e Analisar Informações'},
+    			{id: 'bt3-2', contentId: 'content3.2', title: 'Acessar Formulário Avaliação'},
+    			{id: 'bt3-3', contentId: 'content3.3', 
+    				          title: 'Após "Gravar Avaliação", clicar em "Confirmar Avaliação"'},
+    			{id: 'bt3-4', contentId: 'content3.4', title: 'Verificar Avaliação Confirmada - Importante'},
+    			{id: 'bt4', contentId: 'content4', title: 'Login/Recuperação de Senha'},
+    			{id: 'bt4-1', contentId: 'content4.1', title: 'Formulário de Login'},
+    			{id: 'bt4-2', contentId: 'content4.2', title: 'Formulário de Recuperação de Senha'},
+    			{id: 'bt5', contentId: 'content5', title: 'Como Registrar-se para Participar do Evento'},
+			    {id: 'bt5-1', contentId: 'content5.1', title: 'Boleto, Pagamento e Informações'},
+			    {id: 'bt6', contentId: 'content6', title: 'Moderação de Apresentação de Trabalhos - Sala Virtual'}
+    		];
+    		function clicked(id){
+    			var size = opts.length;
+    			var viewTitle = document.getElementById('viewTitle');
+    			for(var i = 0; i < size; i++){
+    				var bt = document.getElementById(opts[i].id);
+    				var content = document.getElementById(opts[i].contentId);
+    				if(opts[i].id == id){
+    					if(undefined != bt && null != bt){
+    						bt.className = 'list-group-item list-group-item-action active';
+    					}
+    					viewTitle.innerHTML = opts[i].title;
+    					content.style.display = 'block';
+    					continue;
+    				}
+    				if(undefined != bt && null != bt){
+						bt.className = 'list-group-item list-group-item-action';
+					}
+    				content.style.display = 'none';
+    				contentTop();
+    			}
+    		}
+    		function adminView(){
+    			var url = 'http://skallerten-app-manual.s3-website-us-west-2.amazonaws.com/admin/index.html';
+    			window.location.href = url;
+    		}
+    		clicked('bt0');
+    	</script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

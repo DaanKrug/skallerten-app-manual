@@ -1,0 +1,1245 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+    	<meta http-equiv="Cache-Control" 
+    	      content="public, max-age=30" />
+        <meta charset="utf-8">
+        <meta name="viewport" 
+              content="width=device-width, initial-scale=1" />
+        <base href="." />
+        <link rel="icon" 
+              type="image/x-icon" 
+              href="https://skallerten-cdn.s3.amazonaws.com/favicon.ico" />
+        <title>Skallerten - Manual Eventos Admin</title>
+        <link rel="preconnect" 
+              href="https://skallerten-cdn.s3.amazonaws.com" />
+        <link href="https://skallerten-cdn.s3.amazonaws.com/bootstrap/bootstrap-reduced.min.css?v=3" 
+   		      rel="stylesheet" />
+        <link href="https://skallerten-cdn.s3.amazonaws.com/custom.min.css?v=3" 
+              rel="stylesheet" />
+        <link href="https://skallerten-cdn.s3.amazonaws.com/themes/blue01.min.css" 
+              rel="stylesheet" /> 
+        <link href="https://skallerten-cdn.s3.amazonaws.com/fontawesome-5.11/css/all.min.css?v=3" 
+              rel="stylesheet" />
+       	<link href="https://skallerten-cdn.s3.amazonaws.com/webfonts/ubuntu/ubuntu.css?v=3" 
+       	      rel="stylesheet" />
+        <style>
+        	.title{font-size: 4em; font-weight: 700;}
+        	.title2{font-size: 1.1em; font-weight: 500; text-align: center;}
+        	.menuItemL2{padding-left: 1em;}
+        	#divMenuLeft{padding: 0em 0.3em; overflow-x: hidden; overflow-y: auto; width: 15em !important;}
+        	#divContent{padding: 0em 0.3em; width: calc(100% - 15.5em) !important; overflow-x: hidden; overflow-y: auto;}
+        </style>
+    </head>
+    <body style="margin: 0; padding: 0;"
+          onload="resized();"
+          onresize="resized();">
+    	<div style="width: 100%; height: 100vh;">
+    		<header>
+    			<div class="header" 
+    			     style="height: 2.5em; text-align: center;">
+    			     Skallerten - Manual Eventos Admin
+    			</div>
+    		</header>
+    		<div class="container" 
+	             style="margin-top: .3rem !important;">
+	            <div class="row justify-content-center">
+		            <div id="divMenuLeft">
+				     	<nav aria-label="Navega&ccedil;&atilde;o principal">
+				     		<div class="card" 
+						         style="margin-bottom: 0.4em;">
+						        <div class="card-header header" 
+	     							  tabIndex="0">
+								    Configurações
+								</div>
+						        <div class="card-body">
+						        	<div class="list-group">
+										<button id="bt1"
+						        		        onclick="clicked(this.id);" 
+										        tabIndex="0" 
+										        class="list-group-item list-group-item-action">
+												1 - Criar Novo Evento
+										</button>
+										<button id="bt2"
+						        		        onclick="clicked(this.id);" 
+										        tabIndex="0" 
+										        class="list-group-item list-group-item-action">
+												<div class="menuItemL2">
+													1.1 - Configurar Evento
+												</div>
+										</button>
+										<button id="bt3"
+						        		        onclick="clicked(this.id);" 
+										        tabIndex="0" 
+										        class="list-group-item list-group-item-action">
+											 	<div class="menuItemL2">
+													1.2 - Adicionar Congresso/Conferência
+											 	</div>
+										</button>
+										<button id="bt4"
+						        		        onclick="clicked(this.id);" 
+										        tabIndex="0" 
+										        class="list-group-item list-group-item-action">
+												2 - Criar Categorias Inscrição
+										</button>
+										<button id="bt5"
+						        		        onclick="clicked(this.id);" 
+										        tabIndex="0" 
+										        class="list-group-item list-group-item-action">
+												3 - Certificados Customizados
+										</button>
+										<button id="bt6"
+						        		        onclick="clicked(this.id);" 
+										        tabIndex="0" 
+										        class="list-group-item list-group-item-action">
+												4 - Configurações AWS S3
+										</button>
+										
+										
+									</div>
+								</div>
+							</div>
+							
+							<div class="card" 
+						         style="margin-bottom: 0.4em;">
+						        <div class="card-header header" 
+	     							  tabIndex="0">
+								    Gerenciar
+								</div>
+						        <div class="card-body">
+						        	<div class="list-group">
+										<button id="bt10"
+						        		        onclick="clicked(this.id);" 
+										        tabIndex="0" 
+										        class="list-group-item list-group-item-action">
+												10 - Gerenciar Avaliações Trabalhos
+										</button>
+										<button id="bt10-1"
+						        		        onclick="clicked(this.id);" 
+										        tabIndex="0" 
+										        class="list-group-item list-group-item-action">
+												<div class="menuItemL2">
+													10.1 - Acompanhar Confirmações de Submissão
+											 	</div>
+										</button>
+										<button id="bt10-2"
+						        		        onclick="clicked(this.id);" 
+										        tabIndex="0" 
+										        class="list-group-item list-group-item-action">
+												<div class="menuItemL2">
+													10.2 - Definir Avaliadores
+											 	</div>
+										</button>
+										<button id="bt10-3"
+						        		        onclick="clicked(this.id);" 
+										        tabIndex="0" 
+										        class="list-group-item list-group-item-action">
+												<div class="menuItemL2">
+													10.3 - Acompanhar, Aprovar e Rejeitar
+											 	</div>
+										</button>
+										<button id="bt10-4"
+						        		        onclick="clicked(this.id);" 
+										        tabIndex="0" 
+										        class="list-group-item list-group-item-action">
+												<div class="menuItemL2">
+													10.4 - Atribuição de Apresentadores e Nota de Apresentação
+											 	</div>
+										</button>
+						        	</div>
+						        </div>
+						    </div>
+				     	</nav>
+				    </div>
+		    		<div id="divContent">
+						<main>
+						    <div class="card">
+						        <div class="card-header" 
+						             id="viewTitle">
+						        </div>
+						        <div class="card-body">
+						        	<div id="content0"
+						        	     style="display: none;">
+						        	     <h1>Manual para Gerenciamento dos Eventos</h1>
+						        	     <div class="p">
+						        			Pré Requisitos: 
+						        			<ol>
+						        				<li>
+						        					Estar logado no site (parte administrativa).
+						        				</li>
+						        				<li>
+						        					Seguir as etapas listadas em cada um dos itens
+						        					de menu.
+						        				</li>
+						        			</ol>
+						        		</div>
+						        	</div>
+						        	<div id="content1"
+						        	     style="display: none;">
+						        		<h1>Criar Novo Evento</h1>
+						        		<div class="p"></div>
+						        		
+						        		<h2>Criar Novo Evento/Atividade</h2>
+						        		<div class="p">
+						        			Clicar no menu "Eventos/Atividades",
+						        			então clicar no botão "+" (Adicionar)
+						        			no topo direito da listagem de eventos apresentada.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/novo_evento/00_novo_evento.png" 
+						        			     style="border: 0; width: 100%; height: 23em;" />
+						        		</div>
+						        		<h2>Preencher os dados</h2>
+						        		<div class="p">
+						        			Preencher os dados solicitados. A opção 
+						        			"Tornar como evento público" deve ser marcada
+						        			para que a página do evento seja acessível 
+						        			publicamente.
+						        			Pode se marcar esta opção em outro momento, bastando
+						        			clicar em "editar" nas ações disponíveis na listagem 
+						        			dos eventos.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/novo_evento/01_novo_evento.png" 
+						        			     style="border: 0; width: 100%; height: 23em;" />
+						        		</div>
+						        		<h2>Skins</h2>
+						        		<div class="p">
+						        			Skin é a definição do esquema de cores. Deve-se informar
+						        			ao menos 1 que será o padrão ao carregar o site pela
+						        			primeira vez, podendo se selecionar um ou mais
+						        			esquemas (Skins) entre os disponíveis.
+						        		</div>
+						        		<div class="p">
+						        			Para testar os skins pode-se utilizar a funcionalidade "Skin"
+						        			da página de administração, sabendo assim quais esquemas de cores
+						        			deseja-se disponibilizar aos visitantes e usuários
+						        			da página do evento.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/novo_evento/02_novo_evento.png" 
+						        			     style="border: 0; width: 100%; height: 23em;" />
+						        		</div>
+						        		<h2>Integrações</h2>
+						        		<div class="p">
+						        			Algumas configurações para permitir integração de
+						        			meios de pagamento de inscrições e também alterar
+						        			a modalidade padrão de uso do evento (Congresso/Conferência) 
+						        			para tornar a página do evento em ambiente virtual.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/novo_evento/03_novo_evento.png" 
+						        			     style="border: 0; width: 100%; height: 26em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<h2>Ativar o Evento</h2>
+						        		<div class="p">
+						        			Até o momento o evento ainda está bloqueado, e com
+						        			as funcionalidades de configuração (cofigurações diversas)
+						        			e gerenciamento bloqueadas. Clicar em ativar "Cadeado Fechado".
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/novo_evento/04_novo_evento.png" 
+						        			     style="border: 0; width: 100%; height: 27em;" />
+						        		</div>
+						        		<div class="p">
+						        			Agora o evento pode ser configurado e gerenciado. O ícone
+						        			do botão mudou para "Cadeado Aberto" indicando "Desbloqueado",
+						        			e já se pode proceder com a utilização das funcionalidades 
+						        			anteriormente bloqueadas.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/novo_evento/05_novo_evento.png" 
+						        			     style="border: 0; width: 100%; height: 27em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<div class="p"></div>
+						        		<div class="p"></div>
+						        		
+						        	</div>
+						        	<div id="content2"
+						        	     style="display: none;">
+						        		<h1>Configurar Evento</h1>
+						        		<div class="p"></div>
+						        		<h2>Selecionar Evento</h2>
+						        		<div class="p">
+						        			Na listagem de eventos, clicar em "Configurações"
+						        			nas ações do respectivo evento.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/config_evento/00_config_evento.png" 
+						        			     style="border: 0; width: 100%; height: 24em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<h2>Criar Nova Configuração para o Evento</h2>
+						        		<div class="p">
+						        			Clicar no botão "+" (Adicionar) no topo direito,
+						        			para adicionar nova configuração.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/config_evento/01_config_evento.png" 
+						        			     style="border: 0; width: 100%; height: 18em;" />
+						        		</div>
+						        		<h2>Preencher Dados</h2>
+						        		<div class="p">
+						        			Preencher os dados das cargas horárias e intervalos
+						        			de registro de autores/avaliadores, participantes 
+						        			e submissão de trabalhos/artigos.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/config_evento/02_config_evento.png" 
+						        			     style="border: 0; width: 100%; height: 26em;" />
+						        		</div>
+						        		<h2>Criar Termos de Uso</h2>
+						        		<div class="p">
+						        			Recomendável criar um "Termos de Uso".
+						        			Será mostrado um item de menú no site do evento
+						        			caso informado. Este é o termos de uso do
+						        			site. O "termos de uso" para a submissão de trabalhos
+						        			fica à parte em outra funcionalidade relacionada
+						        			aos "Congressos/Conferências".
+						        			Cada evento deve ter no mínimo 1 congresso/conferência
+						        			(ao qual serão submetidos os trabalhos/artigos),
+						        			e cada um deles pode ter um "termos de uso" diferenciado. 
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/config_evento/03_config_evento.png" 
+						        			     style="border: 0; width: 100%; height: 26em;" />
+						        		</div>
+						        		<h2>Imagem Cabeçalho</h2>
+						        		<div class="p">
+						        			Escolher uma imagem para aparecer no cabeçalho
+						        			das páginas do evento. Será exibida desde que informada.
+						        			Esta imagem deve estar previamente cadastrada na funcionalidade
+						        			"Gerenciar >> Arquivos" na parte administrativa.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/config_evento/04_config_evento.png" 
+						        			     style="border: 0; width: 100%; height: 26em;" />
+						        		</div>
+						        		<h2>Imagem Patrocinadores</h2>
+						        		<div class="p">
+						        			Escolher uma imagem para aparecer acima da imagem de rodapé
+						        			das páginas do evento. Será exibida desde que informada.
+						        			Esta imagem deve estar previamente cadastrada na funcionalidade
+						        			"Gerenciar >> Arquivos" na parte administrativa.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/config_evento/05_config_evento.png" 
+						        			     style="border: 0; width: 100%; height: 26em;" />
+						        		</div>
+						        		<h2>Imagem Rodapé</h2>
+						        		<div class="p">
+						        			Escolher uma imagem para aparecer no rodapé
+						        			das páginas do evento. Será exibida desde que informada.
+						        			Esta imagem deve estar previamente cadastrada na funcionalidade
+						        			"Gerenciar >> Arquivos" na parte administrativa.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/config_evento/06_config_evento.png" 
+						        			     style="border: 0; width: 100%; height: 26em;" />
+						        		</div>
+						        		<h2>Imagem Certificado</h2>
+						        		<div class="p">
+						        			Escolher uma imagem para servir de fundo para os certificados
+						        			digitais a serem emitidos pela página do evento.
+						        			Deve ser informada se o evento estiver habilitado para
+						        			gerar certificados (Autores, Avaliadores, Participantes).
+						        			Esta imagem deve estar previamente cadastrada na funcionalidade
+						        			"Gerenciar >> Arquivos" na parte administrativa.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/config_evento/07_config_evento.png" 
+						        			     style="border: 0; width: 100%; height: 26em;" />
+						        		</div>
+						        		<h2>Template Certificado Autor Trabalhos</h2>
+						        		<div class="p">
+						        			Texto template do certificado de "Autor de Trabalhos".
+						        			Previamente preenchido com um texto base e as
+						        			chaves de substituição aceitas (entre "#{" e "}").
+						        			Deve ser informado/alterado se o evento estiver habilitado para
+						        			gerar certificados para autores de trabalhos/artigos.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/config_evento/08_config_evento.png" 
+						        			     style="border: 0; width: 100%; height: 26em;" />
+						        		</div>
+						        		<h2>Template Certificado Avaliador Trabalhos</h2>
+						        		<div class="p">
+						        			Texto template do certificado de "Avaliador de Trabalhos".
+						        			Previamente preenchido com um texto base e as
+						        			chaves de substituição aceitas (entre "#{" e "}").
+						        			Deve ser informado/alterado se o evento estiver habilitado para
+						        			gerar certificados para avaliadores de trabalhos/artigos.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/config_evento/09_config_evento.png" 
+						        			     style="border: 0; width: 100%; height: 26em;" />
+						        		</div>
+						        		<h2>Template Certificado Participante</h2>
+						        		<div class="p">
+						        			Texto template do certificado de "Participante".
+						        			Previamente preenchido com um texto base e as
+						        			chaves de substituição aceitas (entre "#{" e "}").
+						        			Deve ser informado/alterado se o evento estiver habilitado para
+						        			gerar certificados para participantes.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/config_evento/10_config_evento.png" 
+						        			     style="border: 0; width: 100%; height: 26em;" />
+						        		</div>
+						        		<h2>Template Certificado Comissão Organizadora</h2>
+						        		<div class="p">
+						        			Texto template do certificado de "Comissão Organizadora".
+						        			Previamente preenchido com um texto base e as
+						        			chaves de substituição aceitas (entre "#{" e "}").
+						        			Deve ser informado/alterado se o evento estiver habilitado para
+						        			gerar certificados para os integrantes da comissão organizadora.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/config_evento/11_config_evento.png" 
+						        			     style="border: 0; width: 100%; height: 26em;" />
+						        		</div>
+						        		<h2>Template Certificado Comissão Executiva</h2>
+						        		<div class="p">
+						        			Texto template do certificado de "Comissão Executiva".
+						        			Previamente preenchido com um texto base e as
+						        			chaves de substituição aceitas (entre "#{" e "}").
+						        			Deve ser informado/alterado se o evento estiver habilitado para
+						        			gerar certificados para os integrantes da comissão executiva.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/config_evento/12_config_evento.png" 
+						        			     style="border: 0; width: 100%; height: 26em;" />
+						        		</div>
+						        		<h2>Informações de Contato</h2>
+						        		<div class="p">
+						        			Informações de Contato para os visitantes/participantes
+						        			efetuarem comunicação com os organizadores do evento.
+						        			Se informado será criado um item de menu na página
+						        			do evento com estas informações.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/config_evento/13_config_evento.png" 
+						        			     style="border: 0; width: 100%; height: 26em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<h2>Ativar a Configuração</h2>
+						        		<div class="p">
+						        			Necessário ativar a configuração para que a mesma entre em
+						        			utilização/aplicação. Poderá-se criar mais de uma configuração
+						        			mas apenas uma poderá ser ativada de cada vez (nunca 2 ativas 
+						        			ao mesmo tempo).
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/config_evento/14_config_evento.png" 
+						        			     style="border: 0; width: 100%; height: 16em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/config_evento/15_config_evento.png" 
+						        			     style="border: 0; width: 100%; height: 17em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<div class="p"></div>
+						        		<div class="p"></div>
+						        	
+						        	</div>
+						        	<div id="content3"
+						        	     style="display: none;">
+						        		<h1>Adicionar Congresso/Conferência</h1>
+						        		<div class="p"></div>
+						        		<h2>Selecionar Evento</h2>
+						        		<div class="p">
+						        			Na listagem de eventos, clicar em "Congressos/Conferências"
+						        			nas ações do respectivo evento.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/congresso/00_congresso.png" 
+						        			     style="border: 0; width: 100%; height: 22em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<h2>Criar Novo Congresso/Conferência para o Evento</h2>
+						        		<div class="p">
+						        			Clicar no botão "+" (Adicionar) no topo direito, 
+						        			para adicionar novo congresso/conferência. 
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/congresso/01_congresso.png" 
+						        			     style="border: 0; width: 100%; height: 18em;" />
+						        		</div>
+						        		<h2>Preencher Dados</h2>
+						        		<div class="p">
+						        			Preencher os dados gerais como identificação,
+						        			formas de apresentação de trabalho, ordem de apresentação 
+						        			(apresentação visual do congresso/conferência na página do
+						        			evento em relação aos demais congressos/conferências do evento),
+						        			máximo de autores por trabalho, máximo de trabalhos por autor,
+						        			mínimo e máximo de caracteres no resumo, e
+						        			regra de aplicação do "máximo de autores por trabalho".
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/congresso/02_congresso.png" 
+						        			     style="border: 0; width: 100%; height: 26em;" />
+						        		</div>
+						        		<h2>Parâmetros de Avaliação</h2>
+						        		<div class="p">
+						        			Informar Peso da nota do trabalho escrito e peso
+						        			da nota da apresentação na nota final.
+						        			Se não houver apresentação (ou nota de apresentação)
+						        			colocar 0 no respectivo campo e 10 para o peso da parte 
+						        			escrita.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/congresso/03_congresso.png" 
+						        			     style="border: 0; width: 100%; height: 20em;" />
+						        		</div>
+						        		<h2>Termos de Submissão</h2>
+						        		<div class="p">
+						        			Informar os "termos de uso" para serem aceitos
+						        			ao se efetuar uma submmissão de trabalho/artigo
+						        			neste respectivo congresso/conferência.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/congresso/04_congresso.png" 
+						        			     style="border: 0; width: 100%; height: 26em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		
+						        		<h2>Configurar os Parâmetros do Congresso/Conferência</h2>
+						        		<div class="p">
+						        			Configurar as "Areas Temáticas" para submissão de trabalhos/artigos,
+						        			as "Configurações Arquivos" para submissão de trabalhos/artigos,
+						        			e "Pontos Avaliação Trabalho" para a avaliação dos trabalhos/artigos
+						        			que serão submetidos.
+						        		</div>
+						        		<div class="p">
+						        			Estas funcionalidades serão tratadas em sub-itens do
+						        			item de menu atual.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/congresso/05_congresso.png" 
+						        			     style="border: 0; width: 100%; height: 17em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		
+						        		<div class="p"></div>
+						        		<div class="p"></div>
+						        		<div class="p"></div>
+						        		
+						        	</div>
+						        	
+						        	<div id="content4"
+						        	     style="display: none;">
+						        		<h1>Categorias Inscrição</h1>
+						        		<div class="p">
+						        			É necessário criar ao menos 1 categoria
+						        			de inscrição no evento para permitir
+						        			o registro no evento de "Participantes".
+						        			Também somente após este processo e ter
+						        			definido 1 categoria de inscrição será
+						        			habilitada a funcionalidade de definir/configurar
+						        			os meios de pagamento.
+						        		</div>
+						        		<div class="p"></div>
+						        		<h2>Selecionar Evento/Atividade</h2>
+						        		<div class="p">
+						        			Na listagem de eventos clicar em "Categorias Inscrição".
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/categoria_inscricao/01_categoria_inscricao.png" 
+						        			     style="border: 0; width: 100%; height: 24em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<h2>Criar Nova Categoria Inscrição</h2>
+						        		<div class="p">
+						        			Clicar no botão "+" (Adicionar)
+						        			no topo direito da listagem de categorias de inscrição apresentada.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/categoria_inscricao/02_categoria_inscricao.png" 
+						        			     style="border: 0; width: 100%; height: 12em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<h2>Preencher Dados</h2>
+						        		<div class="p">
+						        			Informar a identificação da categoria, valor (R$),
+						        			data limite para obter desconto, % de desconto, e % de desconto
+						        			para avaliador de trabalhos.
+						        		</div>
+						        		<div class="p">
+						        			O % de desconto para avaliador de trabalhos
+						        			só é válido para quem houver feito inscrição como
+						        			"Autor e Avaliador", ou "Avaliador", e efetivamente houver
+						        			avaliado um ou mais trabalhos (Avaliação corretamente finalizada). 
+						        		</div>
+						        		<div class="p">
+						        			O % de desconto para avaliador de trabalhos
+						        			é calculado sobre o valor obtido após o 
+						        			"% de desconto" ser aplicado(se a inscrição for feita 
+						        			dentro da data limite é aplicado
+						        			para inscrições na respectiva categoria).
+						        		</div>
+						        		<div class="p">
+						        			O % de desconto para avaliador de trabalhos
+						        			é aplicado sem considerar data da inscrição.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/categoria_inscricao/03_categoria_inscricao.png" 
+						        			     style="border: 0; width: 100%; height: 14em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        	</div>
+						        	
+						        	<div id="content5"
+						        	     style="display: none;">
+						        		<h1>Certificados Customizados</h1>
+						        		<div class="p">
+						        			Caso haja necessidade podem ser criados
+						        			certificados especiais que serão atribuídos
+						        			a determinados participantes, conforme méritos
+						        			não previamente previstos pelo sistema.
+						        		</div>
+						        		<div class="p"></div>
+						        		
+						        		<h2>Selecionar Evento/Atividade</h2>
+						        		<div class="p">
+						        			Na listagem de eventos clicar em "Certificados Customizados".
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/certificados_customizados/01_certificados_customizados.png" 
+						        			     style="border: 0; width: 100%; height: 24em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		
+						        		<h2>Criar Novo Certificado Customizado</h2>
+						        		<div class="p">
+						        			Clicar no botão "+" (Adicionar)
+						        			no topo direito da listagem de certificados customizados apresentada.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/certificados_customizados/02_certificados_customizados.png" 
+						        			     style="border: 0; width: 100%; height: 12em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		
+						        		<h2>Preencher os Dados</h2>
+						        		<div class="p">
+						        			Informar identificação, horas padrão, e template (texto do certificado).
+						        		</div>
+						        		<div class="p">
+						        			No momento de se atribuir o certificado a algum participante
+						        			poderá ser atribuido um número de horas diferente
+						        			do padrão. Caso não se informe um valor maior que 0,
+						        			então o valor "horas padrão" é utilizado.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/certificados_customizados/03_certificados_customizados.png" 
+						        			     style="border: 0; width: 100%; height: 17em;" />
+						        		</div>
+						        		<div class="p">
+						        			O template pode ser copiado dos templates de certificados
+						        			da configuração do evento e então fazer modificações (questão das chaves
+						        			de substituição lá descritas).
+						        			Ver item de menu "1.1 - Configurar Evento". 
+						        		</div>
+						        		<div>
+						        			<img src="./img/certificados_customizados/04_certificados_customizados.png" 
+						        			     style="border: 0; width: 100%; height: 24em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        	</div>
+						        	
+						        	<div id="content6"
+						        	     style="display: none;">
+						        		<h1>Configurações AWS S3</h1>
+						        		<div class="p">
+						        			<div class="alert-info">
+						        				Tópico Técnico. Para leigos
+						        				deve ser interpretado como conteúdo
+						        				explicativo da razão de existir a funcionalidade.
+						        			</div>
+						        		</div>
+						        		<div class="p">
+						        			Configuração para definição do armazenamento dos arquivos
+						        			das submissões do evento na nuvem da AWS.
+						        			Em caso que se queira usar uma conta própria da AWS
+						        			para o armazenamento então pode-se realizar esta configuração.
+						        			Do contrário os mantenedores do sistema realizarão
+						        			a configuração padrão.
+						        		</div>
+						        		<div class="p">
+						        			Deve-se ter uma configuração destas ativa para habilitar
+						        			o funcionamento das submissões de trabalhos/artigos.
+						        			Apenas uma destas configurações estará ativa para o evento
+						        			(nunca 2 simultâneamente - verificação do sistema).
+						        		</div>
+						        		<div class="p"></div>
+						        		
+						        		<h2>Selecionar Evento/Atividade</h2>
+						        		<div class="p">
+						        			Na listagem de eventos clicar em "Configurações AWS S3".
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/s3_config/01_s3config.png" 
+						        			     style="border: 0; width: 100%; height: 26em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		
+						        		<h2>Criar Nova Configuração AWS S3</h2>
+						        		<div class="p">
+						        			Na listagem de configurações s3 apresentadas, clicar em
+						        			"+" (Adicionar) no topo direito.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/s3_config/02_s3config.png" 
+						        			     style="border: 0; width: 100%; height: 12em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		
+						        		<h2>Preencher os Dados</h2>
+						        		<div class="p">
+						        			Preencher os campos do formulário
+						        			de acordo com os dados da configuração
+						        			da conta S3 da AWS. Os campos
+						        			"Key" e "Secret" serão armazenados
+						        			criptografados no banco de dados.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/s3_config/03_s3config.png" 
+						        			     style="border: 0; width: 100%; height: 24em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		
+						        		<h2>Bloqueio de Alteração/Exclusão</h2>
+						        		<div class="p">
+						        			Após a primeira submissão de trabalho/artigo gerar
+						        			upload de arquivo para esta configuração a mesma
+						        			passará a ficar bloqueada para toda e qualquer alteração,
+						        			por finalidade de segurança.
+						        			Deste momento em diante todas as demais submissões
+						        			estarão utilizando esta configuração.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/s3_config/04_s3config.png" 
+						        			     style="border: 0; width: 100%; height: 16em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		
+						        	</div>
+						        	
+						        	
+						        	<div id="content10"
+						        	     style="display: none;">
+						        		<h1>Gerenciar Avaliações Trabalhos</h1>
+						        		<div class="p"></div>
+						        		<div class="p">
+						        			Ao Acessar a Funcionalidade "Trabalhos Submetidos"
+						        			na Coluna "Ações" da Lista de Eventos, será apresentada a listagem de
+						        			trabalhos submetidos ao evento em questão, separados em diversas
+						        			abas, cada uma relativa à uma filtragem relativa ao "status"
+						        			ou "progresso" do trabalho/artigo no processo de avaliação.
+						        		</div>
+						        		<div>
+						        			<img src="./img/avaliacao_trabalhos/00_eventos.png" 
+						        			     style="border: 0; width: 100%; height: 27em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		
+						        		<h2>Informações do Trabalho/Artigo</h2>
+						        		<div class="p">
+						        			As informações respectivas ao trabalho podem ser acessadas a qualquer
+						        			momento, independentemente do progresso da avaliação.
+						        			Estas informações ficam disponíveis em uma janela sobreposta ao
+						        			clicar em "Detalhes" (ícone "i").
+						        		</div>
+						        		<div>
+						        			<img src="./img/avaliacao_trabalhos/01_trabalhos_info.png" 
+						        			     style="border: 0; width: 100%; height: 26em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<h2>Alterar/Incluir Autores</h2>
+						        		<div class="p">
+						        			Além de visualizar as informações do trabalho/artigo,
+						        			é possível alterar/incluir/remover autores 
+						        			do trabalho/artigo, na aba "Autores". O primeiro autor
+						        			não pode ser alterado/excluído pois é o responsável
+						        			da submissão (efetuou a submissão).
+						        		</div>
+						        		<div>
+						        			<img src="./img/avaliacao_trabalhos/02_trabalhos_info2.png" 
+						        			     style="border: 0; width: 100%; height: 26em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<h2>Alterar/Incluir Arquivos</h2>
+						        		<div class="p">
+						        			Além de visualizar as informações do trabalho/artigo,
+						        			É possível alterar/incluir/remover arquivos 
+						        			do trabalho/artigo, na aba "Artigos".
+						        		</div>
+						        		<div>
+						        			<img src="./img/avaliacao_trabalhos/02_trabalhos_info1.png" 
+						        			     style="border: 0; width: 100%; height: 26em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		
+						        		
+						        		<div class="p"></div>
+						        		<div class="p"></div>
+						        		<div class="p"></div>
+						        	</div>
+						        	
+						        	<div id="content10-1"
+						        	     style="display: none;">
+						        		<h1>Acompanhar Confirmações de Submissão</h1>
+						        		<div class="p">
+						        			Verificar e acompanhar as submissões a fim de garantir que todos
+						        			os autores completem corretamente o processo de submissão.
+						        			A lista na primeira aba "Aguardando Submissão" contém os trabalhos que 
+						        			os autores não completaram o processo de submissão.
+						        			Se julgar necessário pode ser utilizada a função de envio de email
+						        			para contactar os respectivos autores.
+						        		</div>
+						        		<div class="p">
+						        			É possível definir autores e alterar/incluir/excluir arquivos
+						        			se for necessário, basta clicar em "i" (Detalhes) e
+						        			selecionar a aba "Autores", ou a aba "Arquivos".
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/avaliacao_trabalhos/01_trabalhos_aguardando_conf1.png" 
+						        			     style="border: 0; width: 100%; height: 26em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<h2>Alterar/Incluir Autores</h2>
+						        		<div class="p">
+						        			Além de visualizar as informações do trabalho/artigo,
+						        			é possível alterar/incluir/remover autores 
+						        			do trabalho/artigo, na aba "Autores". O primeiro autor
+						        			não pode ser alterado/excluído pois é o responsável
+						        			da submissão (efetuou a submissão).
+						        		</div>
+						        		<div>
+						        			<img src="./img/avaliacao_trabalhos/02_trabalhos_info2.png" 
+						        			     style="border: 0; width: 100%; height: 26em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<h2>Alterar/Incluir Arquivos</h2>
+						        		<div class="p">
+						        			Além de visualizar as informações do trabalho/artigo,
+						        			É possível alterar/incluir/remover arquivos 
+						        			do trabalho/artigo, na aba "Arquivos".
+						        		</div>
+						        		<div>
+						        			<img src="./img/avaliacao_trabalhos/02_trabalhos_info1.png" 
+						        			     style="border: 0; width: 100%; height: 26em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<h2>Confirmar Submissão</h2>
+						        		<div class="p">
+						        			Caso o responsável pela submissão não efetue
+						        			a "Confirmação de Submissão", pode ser feita esta
+						        			ação clicando no botão "Confirmar Submissão".
+						        			É necessário que tenham sido adicionados os arquivos
+						        			obrigatórios.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/avaliacao_trabalhos/01_trabalhos_aguardando_conf2.png" 
+						        			     style="border: 0; width: 100%; height: 26em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		
+						        		<div class="p"></div>
+						        		<div class="p"></div>
+						        		<div class="p"></div>
+						        	</div>
+						        	
+						        	<div id="content10-2"
+						        	     style="display: none;">
+						        		<h1>Definir Avaliadores</h1>
+						        		
+						        		<div class="p">
+						        			A primeira ação a realizar após os autores completarem corretamente
+						        			o processo de submissão é definir os avaliadores.
+						        			Os trabalhos que se deve realizar esta ação ficam na lista 
+						        			"A definir avaliadores". Deve-se definir um ou mais avaliadores.
+						        			Após isso deve-se liberar o trabalho para os respectivos avaliadores
+						        			realizarem a avaliação. Esta ação efetua-se clicando no botão
+						        			"Autorizar início das avaliações". Ao confirmar esta ação o trabalho
+						        			sai da lista atual e vai para a lista de trabalhos "Em avaliação".
+						        		</div>
+						        		
+						        		<div class="p">
+						        			Caso necessário seja, redefinir ou adicionar um avaliador
+						        			pode-se ir na lista dos trabalhos "Em Avaliação" e colocar o respectivo
+						        			trabalho de volta a esta lista, podendo assim efetuar
+						        			alterações de avaliador(es).
+						        			Contudo deve-se garantir de fazer novamente o processo de colocar 
+						        			"Em Avaliação" o respectivo trabalho. 
+						        		</div>
+						        		<div class="p alert-info">
+						        			Os avaliadores só podem efetuar a avaliação dos trabalhos a eles atribuídos
+						        			se o respectivo trabalho estiver na situação "Em avaliação".
+						        		</div>
+						        		<h2>Selecionar o trabalho/artigo</h2>
+						        		<div class="p">
+						        			Na listagem de trabalhos, clicar em "Definir Avaliadores", para
+						        			selecionar o trabalho/artigo a atribuir os avaliadores.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/avaliacao_trabalhos/02_definir_avaliadores.png" 
+						        			     style="border: 0; width: 100%; height: 26em;" />
+						        		</div>
+						        		<h2>Adicionar Avaliador</h2>
+						        		<div class="p">
+						        			Clicar no botão "+" (Adicionar) no topo direito.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/avaliacao_trabalhos/03_definir_avaliadores.png" 
+						        			     style="border: 0; width: 100%; height: 17em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<h2>Selecionar e Atribuir por Area Temática e Carga de Trabalho</h2>
+						        		<div class="p">
+						        			Os avaliadores estarão classificados em 3 listas em relação à suas preferências
+						        			de avaliação (area e subarea temática), em relação à area a subarea temática
+						        			do artigo/trabalho em questão. Entre colchetes estará sinalizado
+						        			o número de trabalhos que tal avaliador já está atribuído como avaliador.
+						        			Este número visa facilitar melhor distribuição de carga de trabalho
+						        			entre os avaliadores, conforme possível.
+						        		</div>
+						        		<div>
+						        			<img src="./img/avaliacao_trabalhos/04_definir_avaliadores1.png" 
+						        			     style="border: 0; width: 100%; height: 20em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<h2>Dados Gerais, Autores e Avaliadores</h2>
+						        		<div class="p">
+						        			Clicar no botão "Detalhes da Submissão" no topo direito
+						        			para ver alguns dados da submissão para ajudar 
+						        			no processo.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/avaliacao_trabalhos/04_definir_avaliadores2.png" 
+						        			     style="border: 0; width: 100%; height: 20em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<h2>Detalhes da Submissão</h2>
+						        		<div class="p">
+						        			Aqui pode-se ver os dados gerais, os autores
+						        			e quem são os avaliadores da submissão.
+						        		</div>
+						        		<div class="p">
+						        			O sistema bloqueia que um avaliador seja adicionado
+						        			duas vezes na mesma submissão (e dispara Mensagem Alerta).
+						        			Também não são disponibilizados para ser selecionados
+						        			e adicionados como avaliadores, os avaliadores
+						        			que eventualmente sejam autores do respectivo
+						        			trabalho/artigo. Ainda assim pode-se utilizar
+						        			estes dados para orientar-se.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/avaliacao_trabalhos/04_definir_avaliadores3.png" 
+						        			     style="border: 0; width: 100%; height: 20em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		
+						        		<div class="p"></div>
+						        		<div class="p"></div>
+						        		
+						        	</div>
+						        	
+						        	<div id="content10-3"
+						        	     style="display: none;">
+						        		<h1>Acompanhar, Aprovar e Rejeitar</h1>
+						        		
+						        		<div class="p">
+						        			Após colocar os trabalhos "Em Avaliação", os avaliadores
+						        			estarão liberados à realizar as respectivas avaliações dos
+						        			trabalhos. Quando o avaliador "Finalizar" a avaliação, marcando
+						        			como tendo finalizado-a, os indicadores na coluna
+						        			"Avaliações Finalizadas" serão atualizados para o respectivo
+						        			trabalho, de forma a sinalizar quantas avaliações já
+						        			estão prontas entre o total de avaliações. Por exemplo "0/3",
+						        			"1/3", "2/3", "3/3", "1/2" ... sendo o número depois da barra
+						        			o total de avaliadores definidos.
+						        		</div>
+						        		
+						        		<div class="p alert-info">
+						        			Pode-se utilizar a funcionalidade de envio de emails para contactar
+						        			os avaliadores (Todos ou apenas de um trabalho), e realizar
+						        			comunicações quando necessário.
+						        		</div>
+						        		
+						        		<div class="p">
+						        			A partir do momento que existir uma avaliação já confirmada, pode-se
+						        			efetuar a ação "Aprovar", que moverá o trabalho para a lista "Trabalhos Aprovados",
+						        			ou a ação "Reprovar", movendo o trabalho para a lista dos "Trabalhos Reprovados".
+						        			É necessário observar que tais ações bloqueiam a avaliação 
+						        			por parte dos avaliadores. Por exemplo um avaliador que falte apenas confirmar
+						        			a avaliação não poderá fazê-lo mais, nem mesmo editar a respectiva avaliação
+						        			deste trabalho.
+						        			Ambas ações podem ser desfeitas, bastando ir na lista respectiva e clicar em
+						        			"Desfazer Aprovar Trabalho", ou "Desfazer Reprovar Trabalho", de modo
+						        			que o respectivo trabalho voltará a lista "Em Avaliação".
+						        		</div>
+						        		
+						        		<div class="p">
+						        			As "Avaliações" ou "Notas" que cada avaliador atribuiu ao trabalho/artigo
+						        			estarão acessíveis no botão "Ver Avaliações" (ícone "estrela").
+						        		</div>
+						        		
+						        		<h2>Aprovar ou Rejeitar(Reprovar)</h2>
+						        		<div class="p">
+						        			Na listagem de trabalhos clicar em "positivo/Dedão pra cima"
+						        			para aprovar ou "negativo/Dedão pra baixo" para rejeitar
+						        			o respectivo trabalho.
+						        			Estas ações só estarão habilitadas quando ao menos um dos 
+						        			avaliadores houver terminado sua avaliação (avaliação Finalizada).
+						        		</div>
+						        		<div class="p">
+						        			Depois de realizar esta ação os demais avaliadores que não tenham
+						        			finalizado as avaliações estarão impedidos de fazê-lo.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/avaliacao_trabalhos/05_trabalhos_em_avaliacao.png" 
+						        			     style="border: 0; width: 100%; height: 28em;" />
+						        		</div>
+						        		<h2>Trabalho Reprovado/Rejeitado</h2>
+						        		<div class="p">
+						        			Termina aqui a jornada do respectivo trabalho/artigo, no
+						        			evento e congresso/conferência em questão.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/avaliacao_trabalhos/06_trabalhos_rejeitados.png" 
+						        			     style="border: 0; width: 100%; height: 24em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		<h2>Trabalho Aprovado</h2>
+						        		<div class="p">
+						        			Para os trabalhos que forem "Aprovados", é necessário indicar quais
+						        			deles foram apresentados. Para isto existe na lista "Aprovados", uma ação
+						        			"Marcar como Apresentado". Esta ação moverá o trabalho para a lista
+						        			de "Trabalhos Apresentados".
+						        		</div>
+						        		<div class="p">
+						        			Apenas quando o trabalho estiver na lista "Apresentados", poderá ser possível
+						        			indicar qual(is) de seus autores foram apresentadores, 
+						        			e atribuir nota de apresentação.
+						        			É necessário marcar os respectivos apresentadores, para que os mesmos tenham
+						        			acesso ao "Certificado de Apresentador de Artigos", a ser gerado pelo sistema. 
+						        			Esta funcionalidade será tratada em detalhes no próximo item de menu
+						        			"Atribuição de Apresentadores e Nota de Apresentação".
+						        		</div>
+						        		<div>
+						        			<img src="./img/avaliacao_trabalhos/07_trabalhos_aprovados.png" 
+						        			     style="border: 0; width: 100%; height: 24em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		
+						        		<div class="p"></div>
+						        		<div class="p"></div>
+						        		<div class="p"></div>
+						        		
+						        	</div>
+						        	
+						        	<div id="content10-4"
+						        	     style="display: none;">
+						        		<h1>Atribuição de Apresentadores e Nota de Apresentação</h1>
+						        		<div class="p">
+						        			Na lista de trabalhos "Aprovados", o uso da funcionalidade
+						        			"Definir Apresentadores", possibilita marcar quais dos
+						        			autores apresentaram o trabalho/artigo, qual a forma de apresentação
+						        			(Quando for possível a forma de apresentação mudar durante o processo),
+						        			e atribuir nota de apresentação (Quando o peso for maior que 0 para apresentação).
+						        		</div>
+						        		<h2>Selecionar Trabalho/Artigo</h2>
+						        		<div class="p">
+						        			Na listagem de trabalhos/artigos clicar no botão "Marcar Apresentadores".
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/avaliacao_trabalhos/08_trabalhos_apresentados.png" 
+						        			     style="border: 0; width: 100%; height: 26em;" />
+						        		</div>
+						        		<h2>Tipo de Apresentação, Nota Apresentação e Apresentadores</h2>
+						        		<div class="p">
+						        			É possível alterar o Tipo de Apresentação, 
+						        			informar/alterar a Nota de Apresentação e 
+						        			marcar quais dentre os autores apresentaram o trabalho/artigo (Apresentadores).
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/avaliacao_trabalhos/09_marcar_apresentadores.png" 
+						        			     style="border: 0; width: 100%; height: 28em;" />
+						        		</div>
+						        		<h2>Marcar Apresentadores</h2>
+						        		<div class="p">
+						        			Os autores marcados como apresentadores aparecerão
+						        			como apresentadores do respectivo trabalho/artigo
+						        			nos anais do evento. Também eles terão o direito
+						        			a emitir o certificado de apresentação de trabalho.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/avaliacao_trabalhos/10_marcar_apresentadores.png" 
+						        			     style="border: 0; width: 100%; height: 28em;" />
+						        		</div>
+						        		<h2>Informar/Alterar Nota de Apresentação</h2>
+						        		<div class="p">
+						        			Ao informar a nota de apresentação, ao clicar em confirmar
+						        			será automaticamente re-calculada a média final do trabalho/artigo.
+						        			Este cálculo se baseia nos pesos e notas das avaliações escrita e
+						        			apresentação.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/avaliacao_trabalhos/11_marcar_apresentadores.png" 
+						        			     style="border: 0; width: 100%; height: 28em;" />
+						        		</div>
+						        		<h2>Alterar Tipo de Apresentação</h2>
+						        		<div class="p">
+						        			Pode acontecer de o tipo de apresentação realizada seja
+						        			diferente do originalmente informado no momento
+						        			da submissão do trabalho/artigo. Neste caso é possível
+						        			realizar o ajuste necessário (A forma de apresentação será
+						        			visível nos anais).
+						        			Esta alteração é possível se o o congresso/conferência
+						        			ao que o trabalho/artigo estiver submetido permitir
+						        			mais de um tipo de apresentação.
+						        		</div>
+						        		<div class="p"></div>
+						        		<div>
+						        			<img src="./img/avaliacao_trabalhos/12_marcar_apresentadores.png" 
+						        			     style="border: 0; width: 100%; height: 28em;" />
+						        		</div>
+						        		<div class="p"></div>
+						        		
+						        		<div class="p"></div>
+						        		<div class="p"></div>
+						        		<div class="p"></div>
+						        		
+						        	</div>
+						        	
+						        </div>
+						    </div>
+						</main>
+					</div>
+				</div>
+			</div>
+    	</div>
+    	<script>
+    		function contentTop(){
+    			document.getElementById('divContent').scrollTo(0,0);
+    		}
+	    	function resized(){
+				document.getElementById('divMenuLeft').style.maxHeight = (window.innerHeight - 60) + 'px';
+				document.getElementById('divContent').style.maxHeight = (window.innerHeight - 60) + 'px';
+			}
+    		var opts = [
+    			{id: 'bt0', contentId: 'content0', title: 'Início'},
+    			{id: 'bt1', contentId: 'content1', title: 'Criar Novo Evento'},
+    			{id: 'bt2', contentId: 'content2', title: 'Configurar Evento'},
+    			{id: 'bt3', contentId: 'content3', title: 'Adicionar Congresso/Conferência'},
+    			{id: 'bt4', contentId: 'content4', title: 'Criar Categorias Inscrição'},
+    			{id: 'bt5', contentId: 'content5', title: 'Certificados Customizados'},
+    			{id: 'bt6', contentId: 'content6', title: 'Configurações AWS S3'},
+    			
+    			
+    			{id: 'bt10', contentId: 'content10', title: 'Gerenciar Avaliações Trabalhos'},
+    			{id: 'bt10-1', contentId: 'content10-1', title: 'Acompanhar Confirmações de Submissão'},
+    			{id: 'bt10-2', contentId: 'content10-2', title: 'Definir Avaliadores'},
+    			{id: 'bt10-3', contentId: 'content10-3', title: 'Acompanhar, Aprovar e Rejeitar'},
+    			{id: 'bt10-4', contentId: 'content10-4', title: 'Atribuição de Apresentadores e Nota de Apresentação'},
+    			
+    		];
+    		function clicked(id){
+    			var size = opts.length;
+    			var viewTitle = document.getElementById('viewTitle');
+    			for(var i = 0; i < size; i++){
+    				var bt = document.getElementById(opts[i].id);
+    				var content = document.getElementById(opts[i].contentId);
+    				if(opts[i].id == id){
+    					if(undefined != bt && null != bt){
+    						bt.classname = 'list-group-item list-group-item-action active';
+    					}
+    					viewTitle.innerHTML = opts[i].title;
+    					content.style.display = 'block';
+    					continue;
+    				}
+    				if(undefined != bt && null != bt){
+						bt.classname = 'list-group-item list-group-item-action';
+					}
+    				content.style.display = 'none';
+    				contentTop();
+    			}
+    		}
+    		clicked('bt0');
+    	</script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
